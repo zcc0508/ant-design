@@ -1879,7 +1879,7 @@ this.tinycolor = tinycolor;
 @modal-body-padding: 24px;
 @modal-header-bg: @component-background;
 @modal-footer-bg: transparent;
-@modal-mask-bg: fade(@black, 65%);
+@modal-mask-bg: fade(@black, 45%);
 
 // Progress
 // --
@@ -5663,12 +5663,14 @@ html {
 }
 .ant-calendar-range .ant-calendar-header,
 .ant-calendar-range .ant-calendar-month-panel-header,
-.ant-calendar-range .ant-calendar-year-panel-header {
+.ant-calendar-range .ant-calendar-year-panel-header,
+.ant-calendar-range .ant-calendar-decade-panel-header {
   border-bottom: 0;
 }
 .ant-calendar-range .ant-calendar-body,
 .ant-calendar-range .ant-calendar-month-panel-body,
-.ant-calendar-range .ant-calendar-year-panel-body {
+.ant-calendar-range .ant-calendar-year-panel-body,
+.ant-calendar-range .ant-calendar-decade-panel-body {
   border-top: 1px solid #e8e8e8;
 }
 .ant-calendar-range.ant-calendar-time .ant-calendar-time-picker-inner {
@@ -6169,7 +6171,7 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
   background: #fff;
 }
 .ant-drawer-mask {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 .ant-drawer-open-content {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -7452,7 +7454,7 @@ form .ant-upload {
   border-radius: 0 0 4px 4px;
 }
 .ant-modal-mask {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 .ant-modal-confirm-body .ant-modal-confirm-title {
   color: rgba(0, 0, 0, 0.85);
@@ -8746,15 +8748,7 @@ tr.ant-table-expanded-row:hover {
 .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
 .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
-.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
-.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
-.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
-.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
-.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
   background-color: transparent;
 }
 .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr,
@@ -9232,6 +9226,9 @@ li.ant-time-picker-panel-select-option-disabled:hover {
 }
 .ant-timeline-item-tail {
   border-left: 2px solid #e8e8e8;
+}
+.ant-timeline-item-pending .ant-timeline-item-head {
+  background-color: transparent;
 }
 .ant-timeline-item-head {
   background-color: #fff;
